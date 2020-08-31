@@ -95,7 +95,7 @@ opacity: .4; background: #000; }
 
 	.main-area .notify-btn:hover{ background: none; }
 
-	.main-area .social-btn{ position: absolute; bottom: 40px; width: 100%; left: 50%; transform: translateX(-50%); }
+	.main-area .social-btn{ position: absolute; margin-top: 50px; width: 100%; left: 50%; transform: translateX(-50%); }
 
 	.main-area .social-btn > li > a{ margin: 0 10px; padding-bottom: 7px; position: relative; overflow: hidden; }
 
