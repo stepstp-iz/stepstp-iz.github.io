@@ -29,9 +29,9 @@ b{ font-weight: 500;}
 
 img{ width: 400px; margin: 4% 0 40px 0;}
 @media only screen and (max-width: 600px) {
-			img {width: 300px; margin: 40% 0 50px 0;}
-			.title {font-size: 30px;}
-		}
+	img {width: 300px; margin: 40% 0 50px 0;}
+	.title {font-size: 30px;}
+}
 li{ list-style: none; display: inline-block; }
 
 span{ display: inline-block; }
@@ -53,114 +53,60 @@ b.light-color{ color: #444; }
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;} 
 
-	
-/* ---------------------------------
-2. COMMONS FOR PAGE DESIGN
---------------------------------- */
+	.center-text{ text-align: center; } 
 
-.center-text{ text-align: center; } 
+	::-webkit-input-placeholder { font-size: .9em; letter-spacing: 1px; }
 
-::-webkit-input-placeholder { font-size: .9em; letter-spacing: 1px; }
+	::-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
 
-::-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+	:-ms-input-placeholder { font-size: .9em; letter-spacing: 1px; }
 
-:-ms-input-placeholder { font-size: .9em; letter-spacing: 1px; }
-
-:-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+	:-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
 
 
-.full-height{ height: 100%; }
+	.full-height{ height: 100%; }
 
-.position-static{ position: static; }
+	.position-static{ position: static; }
 
-.font-white{ color: #fff; }
+	.font-white{ color: #fff; }
 
+	.main-area{ position: relative; height: 100vh; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
 
-/* ---------------------------------
-3. MAIN SECTION
---------------------------------- */
+	.main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
+	opacity: .4; background: #000; }
 
-.main-area{ position: relative; height: 100vh; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
+	.main-area .desc{ margin: 20px auto; max-width: 500px; }
 
-.main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
-opacity: .4; background: #000; }
+	.main-area .notify-btn{ padding: 13px 35px; border-radius: 50px; border: 2px solid #ae0002;
+		color: #fff; background: #ae0002; margin-top: 5px;}
 
-.main-area .desc{ margin: 20px auto; max-width: 500px; }
+		.main-area .notify-btn:hover{ background: none; }
 
-.main-area .notify-btn{ padding: 13px 35px; border-radius: 50px; border: 2px solid #ae0002;
-	color: #fff; background: #ae0002; margin-top: 5px;}
+		.main-area .social-btn{ position: absolute; margin-top: 50px; width: 100%; left: 50%; transform: translateX(-50%); }
 
-	.main-area .notify-btn:hover{ background: none; }
+		.main-area .social-btn > li > a{ margin: 0 10px; padding-bottom: 7px; position: relative; overflow: hidden; }
 
-	.main-area .social-btn{ position: absolute; margin-top: 50px; width: 100%; left: 50%; transform: translateX(-50%); }
+		.main-area .social-btn > li > a:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; 
+		transition: all .2s; height: 2px; background: #ae0002; }
 
-	.main-area .social-btn > li > a{ margin: 0 10px; padding-bottom: 7px; position: relative; overflow: hidden; }
-
-	.main-area .social-btn > li > a:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; 
-	transition: all .2s; height: 2px; background: #ae0002; }
-
-	
-	.main-area .social-btn > li > a:hover:after{ transform: translateX(100%); }
-
-/* responsive */
-
-
-
-/* Screens Resolution : 992px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* Screens Resolution : 992px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 992px) {
-	
-	
-
-}
-
-
-/* Screens Resolution : 767px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 767px) {
-	
-	/* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
-
-	p{ line-height: 1.4; }
-
-	h1{ font-size: 2.8em; line-height: 1; }
-	h2{ font-size: 2.2em; line-height: 1.1; }
-	h3{ font-size: 1.8em; }
 		
-	
-	
-}
+		.main-area .social-btn > li > a:hover:after{ transform: translateX(100%); }
 
-/* Screens Resolution : 479px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 479px) {
 
-	/* ---------------------------------
-	1. PRIMARY STYLES
-	--------------------------------- */
+		@media only screen and (max-width: 767px) {
+			
+			p{ line-height: 1.4; }
 
-	body{ font-size: 12px; }
-	
-}
+			h1{ font-size: 2.8em; line-height: 1; }
+			h2{ font-size: 2.2em; line-height: 1.1; }
+			h3{ font-size: 1.8em; }
+			
+			
+			
+		}
 
-/* Screens Resolution : 359px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 359px) {
-	
-	
-}
+		@media only screen and (max-width: 479px) {
 
-/* Screens Resolution : 290px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 290px) {
-	
-	
-}
+			body{ font-size: 12px; }
+			
+		}
