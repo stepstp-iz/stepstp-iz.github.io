@@ -107,29 +107,28 @@ b.light-color{ color: #444; }
 			
 		}
 
-.confirm {
-	border-radius: 50px;
-}
+		.confirm {
+			border-radius: 50px;
+		}
 
-/*Privacy*/
+		/*Privacy*/
 
 		body.privacy {
 			font-size: 12px; font-family: 'Open Sans', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400; overflow: auto;
-		
-			color: #333;
+			background-color: #1F1F1F;
 		}
 
 		h1.privacy {
-			font-size: 18px; padding: 40px 0 10px 0;
+			font-size: 16px; padding: 40px 0 10px 0;
 		}
 
 		p.privacy {
 			text-align: justify;
 		}
 
-	.main-area-privacy{ position: relative; height: 100%; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
+		.main-area-privacy{ position: relative; height: 100%; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
 
-	.main-area-privacy:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
-	opacity: .4; background: #000; }
+		.main-area-privacy:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
+		opacity: .4; background: inherit; }
 
-	.main-area-privacy .desc{ margin: 20px auto; max-width: 500px; }
+		.main-area-privacy .desc{ margin: 20px auto; max-width: 500px; }
