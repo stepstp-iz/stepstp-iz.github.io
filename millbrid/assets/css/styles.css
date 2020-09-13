@@ -132,3 +132,105 @@ b.light-color{ color: #444; }
 		opacity: .4; background: inherit; }
 
 		.main-area-privacy .desc{ margin: 20px auto; max-width: 500px; }
+
+		#contactForm {
+			width: 800px;
+			margin: 0 auto;
+		}
+		.inputEntity {
+			margin-bottom: 20px;
+			position: relative;
+		}
+		.inputEntity input[type=text], .inputEntity textarea {
+			border: 1px solid #e8e8e8;
+			border-radius: 2px;
+			display: block;
+			width: 100%;
+			padding: 0 10px;
+			height: 40px;
+		}
+		.errorInput {
+			border: 1px solid #e33c3c !important;
+		}
+		.inputEntity textarea {
+			height: 168px;
+			margin: 0;
+			padding: 10px;
+		}
+		.inputEntity label {
+			display: block;
+			margin-bottom: 5px;
+			font-size: 15px;
+			font-weight: normal;
+			line-height: 19px;
+		}
+		.erroMessage {
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			padding-top: 5px;
+			color: #e33c3c;
+			font-weight: 600;
+			font-size: 11px;
+		}
+		label + .erroMessage {
+			bottom: inherit;
+			top: 0;
+			right: 0;
+			left: inherit;
+		}
+		.formActions {
+			text-align: right;
+		}
+
+		.stackedInput, ul.stackedInput li {
+			display: inline-block;
+			margin-right: 15px;
+		}
+
+		::-webkit-input-placeholder {
+			color:#868686;
+			-webkit-opacity:1 !important;
+		}
+		::-moz-placeholder {
+			color:#868686;
+			opacity:1 !important;
+		}
+		:-ms-input-placeholder {
+			color:#868686;
+			-ms-opacity:1 !important;
+		}
+		input:-moz-placeholder {
+			color:#868686;
+			-moz-opacity:1 !important;
+		}
+		.primaryBtn{ 
+			padding: 13px 35px; 
+			border-radius: 50px; 
+			border: 2px solid #ae0002;
+			color: #fff; 
+			background: #ae0002; 
+			margin-top: 5px;
+			transition: all .3s;
+			cursor: pointer;
+		}
+		.primaryBtn:hover{ 
+			color: #ae0002; 
+			background: #fff; 
+		}
+
+		@media all and(max-width: 992px) {
+			#contactForm {
+				width: 100%;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.primaryBtn {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.inputEntity input[type=text],
+			.inputEntity textarea {
+				outline: none;
+			}
+		}

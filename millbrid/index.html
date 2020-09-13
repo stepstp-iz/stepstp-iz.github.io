@@ -15,6 +15,7 @@
 
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+	<link href="./assets/css/plugins.css" rel="stylesheet">
 	<link href="./assets/css/styles.css" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,8 +39,57 @@
 
 		<p class="desc font-white">We will launch our service in November 2020. If you would like to stay informed about our services, please contact us or follow us on social media to stay tuned!</p>
 		
-		<a class="notify-btn" href='mailt&#111;&#58;%69&#110;fo&#64;&#109;i&#108;&#108;&#105;&#37;6F%6&#69;%62r%&#54;9d%67e&#115;%2Eco&#109;'><b>CONTACT US!</b></a>
+		<!-- <a class="notify-btn" href='mailt&#111;&#58;%69&#110;fo&#64;&#109;i&#108;&#108;&#105;&#37;6F%6&#69;%62r%&#54;9d%67e&#115;%2Eco&#109;'>
+			<b>CONTACT US!</b>
 		
+		</a> -->
+		<div style="display: none;" id="contactForm">
+			<div class="contactForm">
+				<div class="row">
+				  <div class="col-sm-12"><h3 class="blockTitile">Contact Us</h3></div>
+				<div class="col-sm-12">
+				  <div class="inputEntity">
+					<label>First Name</label>
+					<div class="inputParent"><input type="text" class="form-control" placeholder=""></div>
+				  </div>
+				</div>
+				<div class="col-sm-12">
+				  <div class="inputEntity">
+					<label>Last Name</label>
+					<div class="inputParent"><input type="text" class="form-control" placeholder=""></div>
+				  </div>
+				</div>
+				<div class="col-sm-12">
+					<div class="inputEntity">
+						<label>Country Name</label>
+					  <div class="inputParent"><input type="text" class="form-control" placeholder=""></div>
+					</div>
+				  </div>
+				<div class="col-sm-12">
+				  <div class="inputEntity">
+					<label>Email</label>
+					<div class="inputParent"><input type="text" class="form-control" placeholder=""></div>
+				  </div>
+				</div>
+				<div class="col-sm-12">
+				  <div class="inputEntity">
+					<label>Message</label>
+					<div class="textareaParent"><textarea class="form-control"></textarea></div>
+				  </div>
+				  <div class="formActions">
+					<input type="reset" value="Reset" class="primaryBtn">
+					<input type="submit" value="Submit" class="primaryBtn">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		<a data-fancybox data-src="#contactForm" href="javascript:;"  class="notify-btn">
+			<b>CONTACT US!</b>
+		</a>
+
+
 		<ul class="social-btn font-white">
 			<li><a href="https://www.facebook.com/MillionBridges" target="_blank">Facebook</a></li>
 			<li><a href="https://www.instagram.com/millionbridges/" target="_blank">Instagram</a></li>
@@ -49,7 +99,10 @@
 		
 	</div><!-- main-area -->
 	<!-- JS -->
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/plugins.js"></script>
 	<script src="./assets/js/cookie.notice.min.js"></script>
 	<script src="./assets/js/script.js"></script>
+
 </body>
 </html>
