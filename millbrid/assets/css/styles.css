@@ -153,7 +153,7 @@ b.light-color{ color: #444; }
 			border: 1px solid #e33c3c !important;
 		}
 		.inputEntity textarea {
-			height: 168px;
+			height: 80px;
 			margin: 0;
 			padding: 10px;
 		}
