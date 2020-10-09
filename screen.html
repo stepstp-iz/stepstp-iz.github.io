@@ -28,7 +28,11 @@
 
 <body>
 	<!-- Loader -->
-	<div class="loader" id="overlay"></div>
+	
+<div id="load" class="spinner-loader"><div class="load-wrap"></div></div>
+
+
+
   <!-- Message -->
   <div id="message">
     <h1>Hello,</h1>
@@ -39,13 +43,18 @@
   <!-- JS -->
   <script src="./assets/js/cookie.notice.min.js"></script>
   <script src="./assets/js/script.js"></script>
-  <script>
- $(window).load(function(){ 
-       $("#overlay").delay(0).animate({ 'opacity': 0 }, 800, null, function() { 
-            $('#overlay').fadeOut('slow'); 
-       }); 
-    }); 
 
+
+<script type="text/javascript">
+    // Javascript function to display loader on page load
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var $load = document.getElementById("load");
+        var removeLoading = setTimeout(function() {
+            $load.className += " loader-removed";
+        }, 500);
+    });
+
+    
 </script>
 </body>
 
