@@ -28,7 +28,7 @@
 
 <body>
 	<!-- Loader -->
-	<div class="loader"></div>
+	<div class="loader" id="overlay"></div>
   <!-- Message -->
   <div id="message">
     <h1>Hello,</h1>
@@ -40,8 +40,11 @@
   <script src="./assets/js/cookie.notice.min.js"></script>
   <script src="./assets/js/script.js"></script>
   <script>
-
-            $("load").remove();
+ $(window).load(function(){ 
+       $("#overlay").delay(0).animate({ 'opacity': 0 }, 800, null, function() { 
+            $('#overlay').fadeOut('slow'); 
+       }); 
+    }); 
 
 </script>
 </body>
