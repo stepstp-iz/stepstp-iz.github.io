@@ -149,7 +149,7 @@ body #load.loader-removed {
     visibility: hidden;
 }
 .spinner-loader .load-wrap {
-    background-image: url("images/loader.png");
+    background-image: url("../img/loader.png");
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
