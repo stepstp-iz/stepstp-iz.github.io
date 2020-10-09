@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /stock/
+
+
+Sitemap: https://izada.github.io/sitemap.xml
