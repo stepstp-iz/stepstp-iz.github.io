@@ -13,8 +13,9 @@
         <!-- End of body-->
     </div>
     <script>
-window.addEventListener(“load”, () => { 
-  document.getElementById(“loader”).style.display = “none”; 
-}); 
+      var preloader = document.getElementById('loader');
+      function preLoaderHandler(){
+          preloader.style.display = 'none';
+      }
     </script>
 </body>
