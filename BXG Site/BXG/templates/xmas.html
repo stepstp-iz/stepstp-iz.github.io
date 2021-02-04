@@ -1,0 +1,67 @@
+﻿<article id="xmasticker" style="display: none">
+    <div id="greetings">
+        <span>
+            Season's Greetings!
+        </span>
+    </div>
+    <div id="message">
+        <span>
+            Integration is <b>TAKING ACTION</b> again!
+        </span>
+        <a href="http://www.actionagainsthunger.org/" target="_blank">
+            <img class="aah" src="images/aah.png" />
+        </a>
+        <a href="https://my.actionagainsthunger.org/checkout/donation?eid=24902" class="donate" target="_blank">Donate</a>
+    </div>
+    <img src="images/aah.plus.png" class="expand" />
+    <canvas id="snow"></canvas>
+</article>
+<article id="xmasmodal" style="display: none">
+    <div class="rectangle">
+        <h2>
+            There are tragedies that don't make the headlines<br />
+            Join Integration this year in supporting the people that support those in need.
+        </h2>
+        <div class="images">
+            <img src="images/aah.png" class="aah" />
+            <img src="images/aah.kids.png" class="kids" />
+        </div>
+        <div class="clearfix"></div>
+        <h1>YOU CAN HELP END HUNGER <a href="https://my.actionagainsthunger.org/checkout/donation?eid=24902" class="donate" target="_blank">Donate</a></h1>
+    </div>
+    <img src="images/aah.close.png" class="close" />
+    <canvas id="snowbig"></canvas>
+</article>
+
+<script type="text/javascript" src="js/snow.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var int = flakes.init("snow", 77);
+        var g = true;
+        setInterval(function () {
+            if (g) {
+                $("#greetings").animate({ "top": -100 }, function () {
+                    $("#message").animate({ "top": 0 }, function () {
+                        g = false;
+                    });
+                });
+            } else {
+                $("#message").animate({ "top": -100 }, function () {
+                    $("#greetings").animate({ "top": 0 }, function () {
+                        g = true;
+                    });
+                });
+            }
+        }, 4000);
+        $(".expand").click(function () {
+            window.clearInterval(int);
+            int = flakes.init("snowbig", 460);
+            $("#xmasmodal").slideDown();
+        });
+        $(".close").click(function () {
+            window.clearInterval(int);
+            int = flakes.init("snow", 77);
+            $("#xmasmodal").slideUp();
+        });
+    });
+</script>

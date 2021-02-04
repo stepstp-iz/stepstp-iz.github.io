@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /papers/
+Disallow: /campaigns/
+Disallow: /vcards/
+
+Sitemap: https://brandexperience-group.com/sitemap.xml

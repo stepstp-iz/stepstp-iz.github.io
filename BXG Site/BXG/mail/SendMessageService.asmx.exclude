@@ -1,0 +1,189 @@
+﻿<%@ WebService Language="C#" Class="SendMessageService" %>
+
+
+
+//using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+//using System.Net.Http;
+using System.Net.Mail;
+using System.Text;
+using System.Web;
+using System.Web.Script.Serialization;
+using System.Web.Services;
+
+
+
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+[System.ComponentModel.ToolboxItem(false)]
+[System.Web.Script.Services.ScriptService]
+public class SendMessageService : System.Web.Services.WebService
+{
+
+    public SendMessageService()
+    { }
+
+    //private static readonly HttpClient client = new HttpClient();
+
+    [WebMethod]
+    public int SendMessage(string name,string email,string jobtitle,string company,string phone,string message ,string rechaptchaToken)
+    {
+
+
+      
+            var isRechaptchaValid = verifyRecaptchaAsync(rechaptchaToken).Result;
+
+
+
+            if (isRechaptchaValid == true)
+            {
+
+
+                try
+                {
+
+
+
+                    SmtpClient client = new SmtpClient();
+                    client.Port = 587;
+                    client.UseDefaultCredentials = true;
+                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    client.Host = "194.42.142.29";
+                    client.Credentials = new System.Net.NetworkCredential("wikitest@integration-online.net", "5t3p5t3p1MC");
+
+                    MailMessage mailAnnouncements = new MailMessage("noreply@brandexperience-group.com", "info@brandexperience-group.com");
+
+                    mailAnnouncements.Subject = "BXG Contact Message";
+                    string body = "Dears,<br/> <br/>The following user has requested to talk to a BXG representative:";
+                    body = body + "<br/>" + "Name: " + name + "<br/>";
+
+                    if (company != "")
+                    {
+                        body = body + "Company: " + company + "<br/>";
+                    }
+                    if (jobtitle != "")
+                    {
+                        body = body + "Function: " + jobtitle + "<br/>";
+                    }
+                    if (email != "")
+                    {
+                        body = body + "Email: " + email + "<br/>";
+                    }
+                    if (phone != "")
+                    {
+                        body = body + "Phone: " + phone + "<br/>";
+                    }
+                    if (message != "")
+                    {
+                        body = body + "Message: " + message + "<br/>";
+                    }
+
+                    body = body + "<br/><br/><br/><a href=''></a>"
+                        + "Best Regards,"
+                        + "<br/>"
+                        + "BXG Team";
+                    mailAnnouncements.Body = body;
+                    mailAnnouncements.IsBodyHtml = true;
+                    client.Send(mailAnnouncements);
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+
+                return 1;
+
+
+            }
+
+            else
+            {
+                return 0;
+
+            }
+
+      
+
+
+            
+    }
+
+    private async System.Threading.Tasks.Task<bool> verifyRecaptchaAsync(string token)
+    {
+
+        var request = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify");
+
+        var postData ="secret=" + Uri.EscapeDataString("6LfniM0ZAAAAADzi8vnulPTez7vAXt0wfDpFFqzp");
+        postData += "&response=" + Uri.EscapeDataString(token);
+        var data = Encoding.ASCII.GetBytes(postData);
+
+        request.Method = "POST";
+        request.ContentType = "application/x-www-form-urlencoded";
+        request.ContentLength = data.Length;
+
+        using (var stream = request.GetRequestStream())
+        {
+            stream.Write(data, 0, data.Length);
+        }
+
+
+        var response = (HttpWebResponse)request.GetResponse();
+
+
+        //System.Diagnostics.Debug.WriteLine(response);
+
+        var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+        //System.Diagnostics.Debug.WriteLine(responseString);
+
+        JavaScriptSerializer js = new JavaScriptSerializer();
+
+        //var response =await client.GetStringAsync("https://www.google.com/recaptcha/api/siteverify?secret=&response=" + token);     
+        recaptchResponse RecObject = js.Deserialize<recaptchResponse>(responseString);
+
+
+        //System.Diagnostics.Debug.WriteLine("hello  ==============" + responseString);
+        //System.Diagnostics.Debug.WriteLine(RecObject.success);
+        //System.Diagnostics.Debug.WriteLine(RecObject.score);
+        //System.Diagnostics.Debug.WriteLine(RecObject.action);
+
+        if (RecObject.success==true && RecObject.score>0.5)
+        {
+
+            return true;
+        }
+        else
+        {
+
+
+            return false;
+        }
+
+
+
+
+    }
+
+
+
+
+
+}
+
+
+class recaptchResponse
+{
+    public bool success;
+    public float score;
+    public string action;
+    public DateTime challenge_ts;
+    public string hostname;
+
+}
+
+
+

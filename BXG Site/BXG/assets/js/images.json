@@ -1,0 +1,336 @@
+[
+    {
+        "app": "cd",
+        "images": [
+            {
+                "image": "TNS-Question-Coding",
+                "desc": "Tools to establish a complex coding scheme for questions, answers, and lists"
+            },
+            {
+                "image": "tns-Questionnaire-coding",
+                "desc": "Tools to establish a complex coding scheme for questions, answers, and lists"
+            }
+        ]
+    },
+    {
+        "app": "ct",
+        "images": [
+            {
+                "image": "Target-Expression",
+                "desc": "Providing a blueprint of the segments through which the data is read and analysed (e.g. gender, age group, etc.)"
+            },
+            {
+                "image": "Target-Listing",
+                "desc": "Providing a blueprint of the segments through which the data is read and analysed (e.g. gender, age group, etc.)"
+            }
+        ]
+    },
+    {
+        "ftr": "bi",
+        "app": "dv",
+        "images": [
+            {
+                "image": "Validation-Report-2",
+                "desc": "Reading, processing, and validating the raw data using advanced data validation robots and engines"
+            },
+            {
+                "image": "Validation-Report-1",
+                "desc": "Reading, processing, and validating the raw data using advanced data validation robots and engines"
+            }
+        ]
+    },
+    {
+        "app": "dp",
+        "images": [
+            {
+                "image": "BAW-Mapping",
+                "desc": "Tools to read and map fieldwork agency data files to provide data reports (PowerPoint and Excel)"
+            },
+            {
+                "image": "Upload-Raw-Data",
+                "desc": "Elaborate cloud Data Processing Engine handling a large scale of records and possessing an extensive calculation engine and data manipulation capabilities"
+            },
+            {
+                "image": "Study-Screen",
+                "desc": "Elaborate cloud Data Processing Engine handling a large scale of records and possessing an extensive calculation engine and data manipulation capabilities"
+            }
+        ]
+    },
+    {
+        "app": "ra",
+        "images": [
+			{
+                "image": "bxpm-3",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            },
+			{
+                "image": "bxpm-2",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            },
+			{
+                "image": "bxpm-1",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            },
+            {
+                "image": "MCAP-7",
+                "desc": "Desktop distributed application module to generate dashboards and graphs and act as a central tool for data mining and reporting"
+            },
+            {
+                "image": "MCAP-2",
+                "desc": "Desktop distributed application module to generate dashboards and graphs and act as a central tool for data mining and reporting"
+            },
+            {
+                "image": "MCAP-4",
+                "desc": "Desktop distributed application module to generate dashboards and graphs and act as a central tool for data mining and reporting"
+            },
+			  {
+                "image": "BAW-PPT1",
+                "desc": "Management of online surveys Data, generation and distribution of data reports to different stakeholders and geographies based on pre-set and custom templates"
+            },
+            {
+                "image": "BAW-PPT2",
+                "desc": "Management of online surveys Data, generation and distribution of data reports to different stakeholders and geographies based on pre-set and custom templates"
+            },
+            {
+                "image": "BAW-Reports-Pop",
+                "desc": "Management of online surveys Data, generation and distribution of data reports to different stakeholders and geographies based on pre-set and custom templates"
+            },
+			 {
+                "image": "MCAN-2",
+                "desc": "Interactive custom reports and dashboard. Always updated in real-time from consolidated central databases"
+            },
+            {
+                "image": "MCAN-1",
+                "desc": "Interactive custom reports and dashboard. Always updated in real-time from consolidated central databases"
+            },
+			{
+                "image": "MCAN-4",
+                "desc": "Interactive custom reports and dashboard. Always updated in real-time from consolidated central databases"
+            },
+            {
+                "image": "MCAN-3",
+                "desc": "Online tools that provide (top level) based multi-market effectiveness and efficiency performance indicators in an intuitive graphical user interface"
+            }
+        ]
+    },
+    {
+        "app": "bxp",
+        "images": [
+			{
+                "image": "bxpm-4",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            },
+            {
+                "image": "bxpm-3",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            },
+			{
+                "image": "bxpm-2",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            },
+			{
+                "image": "bxpm-1",
+                "desc": "The Brand Monitor Report is a brand-specific report that is generated for a brand owner within a market based on the fieldwork conducted for the BrandXP Index in that market"
+            }
+        ]
+    },
+	 {
+        "app": "bot",
+        "images": [
+            {
+                "image": "Confidence-Interval-2",
+                "desc": "Engines to generate a set of indicators using thousands of iterations with random set of respondents in each iteration"
+            },
+            {
+                "image": "Confidence-Interval-1",
+                "desc": "Engines to generate a set of indicators using thousands of iterations with random set of respondents in each iteration"
+            }
+        ]
+    },
+    {
+        "app": "hc",
+        "images": [
+            {
+                "image": "Hypercube",
+                "desc": "Engines to generate a set of indicators using thousands of iterations"
+            }
+        ]
+    },
+    {
+        "app": "nb",
+        "images": [
+            {
+                "image": "N&B-1",
+                "desc": "A comprehensive database of research results on a large span of time and data sets with an extensive research and retrieval features and elaborate intelligence to extract various benchmarks and Norms"
+            },
+            {
+                "image": "N&B-2",
+                "desc": "A comprehensive database of research results on a large span of time and data sets with an extensive research and retrieval features and elaborate intelligence to extract various benchmarks and Norms"
+            },
+            {
+                "image": "N&B-3",
+                "desc": "A comprehensive database of research results on a large span of time and data sets with an extensive research and retrieval features and elaborate intelligence to extract various benchmarks and Norms"
+            },
+            {
+                "image": "N&B-4",
+                "desc": "A comprehensive database of research results on a large span of time and data sets with an extensive research and retrieval features and elaborate intelligence to extract various benchmarks and Norms"
+            }
+        ]
+    },
+    {
+        "app": "turf",
+        "images": [
+            {
+                "image": "Turf-",
+                "desc": "The TURF module is a special report that provides the most differentiating contacts and the most differentiating and influential contacts"
+            },
+            {
+                "image": "Turf-3",
+                "desc": "The TURF module is a special report that provides the most differentiating contacts and the most differentiating and influential contacts"
+            },
+            {
+                "image": "Turf-2",
+                "desc": "The TURF module is a special report that provides the most differentiating contacts and the most differentiating and influential contacts"
+            }
+        ]
+    },
+    {
+        "app": "dms",
+        "images": [
+            {
+                "image": "LeA-1",
+                "desc": "Tools that act as the central source for all documentation, and a repository for integration best practices, template, white papers and FAQs. Also the archiving all documents and data pertaining to past projects."
+            },
+            {
+                "image": "WIP-Docs",
+                "desc": "Tools that act as the central source for all documentation, and a repository for integration best practices, template, white papers and FAQs. Also the archiving all documents and data pertaining to past projects."
+            }
+        ]
+    },
+    {
+        "app": "es",
+        "images": [
+            {
+                "image": "ACAD-8",
+                "desc": "E-learning platfrom to propagate and test knowledge transfer"
+            },
+            {
+                "image": "ACAD-6",
+                "desc": "e-learning platfrom to propagate and test knowledge transfer"
+            },
+            {
+                "image": "ACAD-5",
+                "desc": "e-learning platfrom to propagate and test knowledge transfer"
+            },
+            {
+                "image": "ACAD-3",
+                "desc": "e-learning platfrom to propagate and test knowledge transfer"
+            },
+            {
+                "image": "ACAD-7",
+                "desc": "e-learning platfrom to propagate and test knowledge transfer"
+            }
+        ]
+    },
+    {
+        "app": "cms",
+        "images": [
+            {
+                "image": "CMS-3",
+                "desc": "Content management systems to create and disseminate electronic content"
+            },
+            {
+                "image": "CMS-2",
+                "desc": "Content management systems to create and disseminate electronic content"
+            },
+            {
+                "image": "CMS-1",
+                "desc": "Content management systems to create and disseminate electronic content"
+            }
+        ]
+    },
+    {
+        "app": "eb",
+        "images": [
+            {
+                "image": "eHandbook-Notes",
+                "desc": "Online environments to navigate knowledge with many enablers such as FAQ, Note, PDF export, Comments, Glossary, Email, Coaching, Search, Archival, etc..."
+            },
+            {
+                "image": "eHandbook-Glossary",
+                "desc": "Online environments to navigate knowledge with many enablers such as FAQ, Note, PDF export, Comments, Glossary, Email, Coaching, Search, Archival, etc..."
+            },
+            {
+                "image": "eHandbook-FAQ",
+                "desc": "Online environments to navigate knowledge with many enablers such as FAQ, Note, PDF export, Comments, Glossary, Email, Coaching, Search, Archival, etc..."
+            },
+            {
+                "image": "eHandbook",
+                "desc": "Online environments to navigate knowledge with many enablers such as FAQ, Note, PDF export, Comments, Glossary, Email, Coaching, Search, Archival, etc..."
+            }
+        ]
+    },
+    {
+        "app": "qd",
+        "images": [
+            {
+                "image": "BAW-Answers",
+                "desc": "Fast and easy questionnaires authoring tools"
+            },
+            {
+                "image": "QD-Question",
+                "desc": "Advanced flexible authoring tools for questions"
+            },
+            {
+                "image": "QD-Questionnaire",
+                "desc": "The Questionnaire Designer module provides an advanced platform to write and edit questions for your quantitative interviews"
+            },
+            {
+                "image": "TNS-Question",
+                "desc": "Modules for the authoring of complex multi-market, multi-language recurring surveys"
+            }
+        ]
+    },
+    {
+        "app": "pts",
+        "images": [
+            {
+                "image": "DSS",
+                "desc": "Here, the client can monitor the project different assests and status"
+            },
+            {
+                "image": "Monitor-1",
+                "desc": "Here, the client can monitor a project's key milestones, next steps, and responsibilities required to manage the project successfully"
+            },
+            {
+                "image": "WIP-Docs",
+                "desc": "Tools that update a 'Work-In-Progress' chart for every project initiated. Tracking the project's status through each of its phases, from scoping to final delivery and payment"
+            },
+            {
+                "image": "WIP-Log",
+                "desc": "Tools that update a 'Work-In-Progress' chart for every project initiated. Tracking the project's status through each of its phases, from scoping to final delivery and payment"
+            },
+            {
+                "image": "WIP-Listing",
+                "desc": "Tools that update a 'Work-In-Progress' chart for every project initiated. Tracking the project's status through each of its phases, from scoping to final delivery and payment"
+            }
+        ]
+    },
+    {
+        "app": "we",
+        "images": [
+            {
+                "image": "DSS-DPU",
+                "desc": "Our digital suite of services maintains an approval cycle for authoring of documents and during translation process"
+            },
+            {
+                "image": "NPD-1",
+                "desc": "The project management tool allows stockholders to report bugs, enhancements and new features"
+            },
+            {
+                "image": "TNSQ-Actors",
+                "desc": "Tools to provide a work-flow engine with multiple actors during multi-market surveys and research translation"
+            }
+        ]
+    }
+]
