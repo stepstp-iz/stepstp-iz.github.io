@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="mail.aspx.cs" Inherits="ajax_mail" %>
