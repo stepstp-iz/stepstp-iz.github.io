@@ -9,82 +9,106 @@
   <meta name="author" content="BXG">
 
   <style>
-      * {padding: 0; margin: 0; font-family: Calibri, Arial; color: #313d45}
-      table.main {width: 100%; max-width: 800px; background: #f5f6fa; margin: 0 auto;}
-      .header {background: #313d45}
-      td {padding: 15px 15%;}
-      
-      p {margin: 15px 0}
-      p.focus {color: #815a98; font-weight: bold; margin-top: 50px}
-      a.focus {color: #815a98;}
-      p.focusd {color: #ffffff; font-weight: bold; margin-top: 50px}
-      a.focusd {color: #ffffff;}
-      
-      td.banner {background: #815a98; font-weight: bold}
-      td.banner-B {background: #313d45;}
+    * {padding: 0; margin: 0; font-family: Calibri, Arial; color: #000000; text-align: justify;}
+    table.main {width: 100%; max-width: 800px; background: #efefef; margin: 0 auto;}
+    .header {background: #2599cc}
+    td {padding: 15px 15%;}
 
-      td.banner p,td.banner-B p,td.banner-B strong {color: #fff;}
-      button {background: #815a98; color: #fff; text-transform: uppercase; border: 0; padding: 8px 10px; font-size: 1.1em}
-      
-      table.sub {border-collapse: separate; border-spacing: 4px;}
-      table.sub td {background: #fff; vertical-align: top; padding:8px; width: 33%;}
-    </style>
+    p {margin: 15px 0}
+    p.focus {color: #000000; font-weight: bold; margin-top: 50px}
+    a.focus {color: #000000;}
+    p.focusd {color: #ffffff; font-weight: bold; margin-top: 50px}
+    a.focusd {color: #ffffff;}
+
+    td.banner {background: #000000; font-weight: bold}
+    td.banner-B {background: #2599cc;}
+
+    td.banner p,td.banner-B p,td.banner-B strong {color: #fff;}
+    button {background: #000000; color: #fff; text-transform: uppercase; border: 0; padding: 8px 10px; font-size: 1.1em}
+
+    sup {color: inherit;}
+
+    ol li {
+      padding: 5px;
+      margin-left: 35px;
+      color: #fff;
+    }
+    ul li {
+      margin-left: 35px;
+      color: #fff;
+    }
+
+    table.sub {border-collapse: separate; border-spacing: 4px;}
+    table.sub td {background: #fff; vertical-align: top; padding:8px; width: 33%;}
+  </style>
 
 </head>
 <body>
-    <table class="main" cellpadding="0" cellspacing="0">
-        <tr>
-            <td class="header">
-                <img src="https://stepstp-iz.github.io/campaigns/assets/mcaanalytics.png" alt="MeTHOD" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p class="focus">Dear {Lead.firstName},</p>
-
-                <p>Are you feeling pressure from your clients to get more done with less?</p>
-                <p>The MCA/System enables you to offer exactly that. <strong>MCA-based management techniques provide clear focus on maximizing the effectiveness, efficiency and accountability of the marketing mix</strong>. It  identifies the the best touchpoints to maximise consumer interactions with the brand. It shows how to maximise conversion of brand activities into market share. It measures ROI and helps prioritise budget allocation, allowing you to concentrate only on those channels that provide best results.</p>
-                <p>The <a class="focus" href="{trackingUrl:5cebded94ad84d505}">MCA/System</a> is built for repeatability and scalability, enabling you to expand your business. MCA is not a one-off engagement, it helps you and your clients embed a systematic self-discipline of better marketing.</p>
-                <p>Become an MCA-enabled advisor at no cost and build an added value relationship with your clients.</p>
-                <p>MCA has been used by <strong>200 companies worldwide, across 35,000 brands, in 500 categories and 90 markets</strong>.</p>
-            </td>
-        </tr>
-        <tr>
-        <tr>
-            <td class="banner-B">
-            	<p><strong>Want to know more?</strong></p>
-                <div style="margin: 0 0 10px 0">
-                    <a href="{Lead.campaignTargetSite}{Lead.id}"><img style="max-width:250px" src="https://method-mca.com/mailshot/wk4/img/website-btn.png" alt="Visit our website to find out more"/></a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-weight: bold; font-size: 1.2em">MCA-based solutions implemented worldwide at:</p>
-                <div><img style="width: 100%; margin: 25px 0 50px" src="https://method-mca.com/mailshot/wk4/img/client-logos.png" alt="Client Logos"/></div>
-            </td>
-        </tr>
-        <tr>
-            <td class="banner" style="background: #313d45">
-                <table cellpadding="0" cellspacing="0" style="width: 100%">
-                    <tr>
-                        <td style="padding: 0 10% 0 0">
-                            <p style="color:#9f9f9f">Method is part of the <br/>Integration group of companies</p>
-                        </td>
-                        <td style="padding: 0; text-align: right">
-                            <p style="margin-bottom: 0"><a style="color:#9f9f9f; text-decoration: none" href="{Lead.campaignTargetSite}{Lead.id}">method-mca.com</a></p>
-                            <p style="margin: 0"><a style="color:#9f9f9f; text-decoration: none" href=" {trackingUrl:5cebdf4db75807508}">info@method-mca.com</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                    	<td style="padding: 0 0 0 0">
-                            <p style="color:#9f9f9f">To unsubscribe, <a style="color:#9f9f9f; text-decoration: none" href="{optOutUrl}">please click here.</a></p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
+  <table class="main" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="header" style="text-align: right">
+        <img src="https://stepstp-iz.github.io/campaigns/assets/mcaanalytics.png" width="40%" alt="MeTHOD"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="focus">Dear {Contact.firstName},</p>
+        <p>The events of the last 12 months have changed the world dramatically, and probably forever. Our lives aren’t going reset to how they were pre-pandemic, because we have learned new ways to organise our lives, and that has huge implications for brands. We think differently, work differently, play differently, shop differently, consume media differently, so every business needs to have a really clear grasp of the new landscape to win and prosper.</p>
+      </td>
+    </tr>
+    <tr>
+      <tr>
+        <td class="banner-B">
+         <p style="text-align: center;"><strong>The New Improved MCA<sup>®</sup></strong></p>
+         <p>As someone who has used MCA<sup>®</sup> before, we want to give you an opportunity to try the new and much improved MCA Analytics product. It is simplified, action focused, delivered online, and available at much lower cost and faster than before. You will get straightforward answers to the following important questions:</p>
+         <ol>
+          <li>How is your brand performing during the pandemic?
+            <ul>
+              <li>Is your brand engaging well with your target segments? Why (not)? And your competition?</li>
+              <li>Are you effectively converting that engagement into sales? Why (not)? And your competition?</li>
+            </ul>
+          </li>
+          <li>How has consumer behaviour changed because of the pandemic?
+            <ul>
+              <li>What are the biggest drivers of engagement in the category?</li>
+              <li>What are the must win battles to deliver influence, reach and differentiation? How does that vary by segment and how is it evolving?</li>
+            </ul>
+          </li>
+          <li>What to do about it?
+            <ul>
+              <li>Where do I need to improve, what resources are needed for that and where can I find those with minimal risk to outcome?</li>
+            </ul>
+          </li>
+        </ol>
+        <br>
+        <p style="font-size: 14px; text-align: center;">You can download a summary description of the product by clicking the button below. It details the key questions it will help you make the right decisions to Bounce Back in 2021.
+          <br><br>
+          <a href="https://brandexperience-group.com/papers/MCA%20Analytics%20Deliverables.pdf"><img src="https://stepstp-iz.github.io/campaigns/assets/button1.png" width="100%" alt="button"></a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p style="font-weight: bold;text-align: center;">The Value of Sustainability: now available inside MCA<sup>®</sup></p>
+        <p>One of the biggest changes in 2020 is the level of attention consumers are giving to sustainable and responsible behaviour by brands. They are now much more likely to choose brands because they believe that they are genuinely committed to making positive contributions to society and the environment. MCA<sup>®</sup> now has a unique and powerful way to understand what motivates consumers, and to quantify the value of a brand’s sustainability narrative.</p>
+        <br>
+        <p>If you are interested to learn more, we are happy to arrange a short meeting to give you an overview of how it works, and we can explore the time and costs needed to get you up and running.</p>
+        <p>Please get in touch by replying to the email, or through our <a href
+          ="https://brandexperience-group.com/index.aspx#Contact">website</a>.</p>
+          <br>
+          <p>Best Regards,
+            <br>
+            <strong>{Contact.assignedUserName}</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="banner" style="background: #2599cc;font-size: 12px;">
+          <p style="color:#dedede">The Brand Experience Group</p>
+          <p style="color:#dedede">To unsubscribe, <a style="color:#dedede; text-decoration: none" href="{optOutUrl}">please click here.</a></p>
+      </td>
+    </tr>
+    <tr>
     </table>
-</body>
-</html>
+  </body>
+  </html>
